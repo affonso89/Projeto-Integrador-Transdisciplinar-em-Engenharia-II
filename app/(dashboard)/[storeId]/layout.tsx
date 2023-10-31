@@ -12,8 +12,6 @@ export default async function DashboardLayout({
 }) {
     const { userId } = auth();
 
-    console.log("Here");
-
     if (!userId) {
         redirect('/sign-in');
     }
